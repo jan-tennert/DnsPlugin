@@ -6,7 +6,7 @@ plugins {
     id("io.codearte.nexus-staging") version Versions.NEXUS_STAGING
 }
 
-group = "io.github.jan.dnsplugin"
+group = "io.github.jan-tennert.dnsplugin"
 version = "1.0"
 
 repositories {
@@ -83,9 +83,9 @@ publishing {
         withType<MavenPublication> {
             artifact(javadocJar)
             pom {
-                name.set("RedisKM")
-                description.set("A Kotlin Multiplatform Redis Client")
-                url.set("https://github.com/jan-tennert/RedisKM")
+                name.set("DnsPlugin")
+                description.set("A Ktor plugin for retrieving dns records when requesting")
+                url.set("https://github.com/jan-tennert/DnsPlugin")
                 licenses {
                     license {
                         name.set("GPL-3.0")
@@ -94,11 +94,11 @@ publishing {
                 }
                 issueManagement {
                     system.set("Github")
-                    url.set("https://github.com/jan-tennert/RedisKM/issues")
+                    url.set("https://github.com/jan-tennert/DnsPlugin/issues")
                 }
                 scm {
-                    connection.set("https://github.com/jan-tennert/RedisKM.git")
-                    url.set("https://github.com/jan-tennert/RedisKM")
+                    connection.set("https://github.com/jan-tennert/DnsPlugin.git")
+                    url.set("https://github.com/jan-tennert/DnsPlugin")
                 }
                 developers {
                     developer {
